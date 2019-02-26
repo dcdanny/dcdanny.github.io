@@ -1,8 +1,25 @@
 ---
 layout: header
 ---
+<script>
+function genCon(){
+document.getElementById('genc').innerHTML = "Loading...";
+	setTimeout(function (){
+		var a = "l.com";
+		var b = "dcdanny";
+		var c = "g";
+		var d = "clarke";
+		var e = 8 * 8;
+		var f = "mai";
+		var g = String.fromCharCode(e);
+		var x = d + g + c + f + a;
+		document.getElementById('genc').innerHTML = "<a h" + "ref=" + f + "lto" + ":" + b + x + ">" + b + x + "</a>";
+	}, 1500);
+}
+</script>
 <div class="content">
-
+Contact Me:
+<span id="genc" onclick="genCon();">Click to Reveal...</span>
 <br><br><br><br>
 <hr>
 <br><br><br><br>

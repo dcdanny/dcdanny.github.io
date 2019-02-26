@@ -2,17 +2,20 @@
 layout: master
 ---
 <header class="page-header" role="banner">
-	<div class="wrapper">
-		<a class="site-title" rel="author" href="/">dcdanny.github.io</a>
-		<img src="/assets/logo_full_hori.png" width="500">
-		<nav class="site-nav">
-
-			<div class="trigger"><a class="page-link" href="/about/">About</a></div>
-		</nav>
+	<div style="width:100%;height:80px;">
+		<img src="/assets/logo_full_hori.png" style="height:90%;" class="v-center">
+	</div>
+	<div class="wrapper" style="position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;">
+	<nav class="titleText" style="position:static;">
+		{% include nav.html %}
+	</nav>
 	</div>
 </header>
 <div style="height:130px;">&nbsp;</div>
 
 <div class="content">
-	Allegretto is the new music player, soon to be released for Linux, Windows and MacOS
+		{{ content }}
 </div>

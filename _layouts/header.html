@@ -4,13 +4,10 @@ layout: master
 
 <header class="site-header" role="banner">
 	<nav class="titleText">
-		<a href="/"><div>Home</div></a>
-		<a href="/CV"><div>CV</div></a>
-		<a href="/allegretto"><div>Allegretto</div></a>
-		<a href="https://github.com/dcdanny/"><div>Github</div></a>
-
+		{% include nav.html %}
 	</nav>
-	<div class="titleText v-center">Hello, I'm Dan</div>
+	<div class="titleText v-center">Hello, I'm Dan</div><br>
+	<div style="font-size:190%;" class="titleText v-center">2nd Year Computer Science &bull; University of Birmingham</div>
 </header>
 
 		{{ content }}

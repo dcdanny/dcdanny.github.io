@@ -2,40 +2,107 @@
 layout: header
 ---
 <script>
+gen = false;
 function genCon(){
-document.getElementById('genc').innerHTML = "Loading...";
-	setTimeout(function (){
-		var a = "l.com";
-		var b = "dcdanny";
-		var c = "g";
-		var d = "clarke";
-		var e = 8 * 8;
-		var f = "mai";
-		var g = String.fromCharCode(e);
-		var x = d + g + c + f + a;
-		document.getElementById('genc').innerHTML = "<a h" + "ref=" + f + "lto" + ":" + b + x + ">" + b + x + "</a>";
-	}, 1500);
+	if(!gen){
+		gen = true;
+		document.getElementById('genc').innerHTML = "Loading...";
+		setTimeout(function (){
+			var a = "l.com";
+			var b = "dcdanny";
+			var c = "g";
+			var d = "clarke";
+			var e = 8 * 8;
+			var f = "mai";
+			var g = String.fromCharCode(e);
+			var x = d + g + c + f + a;
+			document.getElementById('genc').innerHTML = "<a h" + "ref=" + f + "lto" + ":" + b + x + ">" + b + x + "</a>";
+		}, 900);
+	}
 }
 </script>
-<div class="content">
-Contact Me:
-<span id="genc" onclick="genCon();">Click to Reveal...</span>
-<br><br><br><br>
-<hr>
-<br><br><br><br>
-<hr>
-<br><br><br><br>
-<hr>
-<br><br><br><br>
-<hr>
-<br><br><br><br>
-<hr>
-<br><br><br><br>
-<hr>
-<br><br><br><br>
-<hr>
-<br><br><br><br>
-<hr>
-<br><br><br><br>
-<hr>
+	<div class="container" style="height:200px;background-color:#FFF;color:#727272;"><div class="container-inner">
+		<table style="width:100%;">
+		<tr><td style="width:50%;min-width:80px;text-align: center;">
+			<span style="font-size:170%;">Daniel Clarke</span>
+		</td><td style="min-width:275px;width:50%;">
+			<div class="contact-item">
+					<img src="/assets/location.png" style="width:40px;">
+					<span>Birmingham, UK</span>
+			</div>
+			<br>
+
+			<div class="contact-item">
+					<img src="/assets/mail.png" style="width:40px;">
+					<span id="genc" onclick="genCon();" style="cursor:pointer;">Click to Reveal...</span>
+			</div>
+			<br>
+
+			<div class="contact-item">
+				<a href="https://linkedin.com/in/dan-j-clarke/">
+					<img src="/assets/linkedin.png" style="width:40px;">
+					<span>linkedin.com/in/dan-j-clarke/</span>
+				</a>
+			</div>
+			<br>
+			<div class="contact-item">
+				<a href="https://github.com/dcdanny">
+					<img src="/assets/gitHub.png" style="width:40px;">
+					<span>github.com/dcdanny</span>
+				</a>
+			</div>
+			<br>
+		</td></tr></table>
+	</div></div>
+<div class="container fixedImg" style="height:50%;background-image:url('/assets/codeWallpaper.png');background-color: #333;padding:0;">
+	<!--Semi Transparent Overlay-->
+	<div class="container-inner" style="height:100%;background-color:rgba(0,0,0,0.4);color:#FFFFFF;text-align:center;">
+		<span style="font-size:170%;">Technical Skills</span>
+		<taglist>
+			<ul>
+
+				<li>Java</li>
+				<li>HTML</li><li>CSS</li><li>PHP</li><li>Javascript</li><li>Node.js</li>
+
+				<li>Experienced with using Git</li>
+				<li>Python</li><li>NLTK</li>
+				<li>Matlab</li><li>SQL</li>
+				<li>C/C++</li>
+				<li>Linux</li><li>Windows</li>
+			</ul>
+		</taglist>
+		<span style="font-size:170%;">Projects</span>
+		<dateList style="text-align: left;">
+			<ul>
+				<li><span>2019 </span>As part of my degree course, working as a team to produce a 2D game in Java</li>
+				<li><span>2018/2019 </span>Volunteering with Valefest to develop their website for the 2019 student festival: <u><a href="http://valefest.co.uk/" target="_blank">valefest.co.uk</a></u></li>
+				<li><span>2018/2019 </span>Currently working on a desktop music player application using ElectronJS and Node.js</li>
+				<li><span>2018/2019 </span>Attended Hack the Midlands Hackathon in both 2017 & 2018 In 2018 my team and I made a web based chess game</li>
+
+				<li><span>2013 - </span>Use my Raspberry Pi for programming and for creating my own website with several different divisions.</li>
+
+			</ul><br>
+			Some of these are available on my <u><a href="https://github.com/dcdanny">GitHub</a></u>
+		</dateList>
+		<div style="width:50%;float:right;font-size:110%;color:#727272;">
+
+
+
+		</div>
+	</div>
 </div>
+<div class="container" style="height:200px;background-color:#d6ff67;"><div class="container-inner">
+	<span style="font-size:170%;">My Education</span><br>
+	<span style="font-size:110%;">University of Birmingham Sept 2017 - Present</span>&nbsp;
+	<span style="color:#727272;">Edgbaston, Birmingham, B15 2TT</span><br>
+
+	<span style="font-size:110%;">BSc Computer Science</span>&nbsp;
+	<span style="color:#727272;">Expected 2:1, Graduation 2021</span><br>
+
+</div></div>
+<!--
+<div class="content">
+	<hr>
+	<br>
+</div>
+-->

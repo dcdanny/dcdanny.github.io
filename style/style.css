@@ -134,6 +134,21 @@ nav.titleText > a:hover{
     -moz-transform: translateY(-50%);
     vertical-align: middle;
 }
+.arrow-down{
+	position:absolute;
+	bottom:30px;
+	left:50%;
+	transition: 0.5s;
+}
+.arrow-down img{
+	height:28px;
+	transition: 0.5s;
+	position: relative;
+	bottom: 0px;
+}
+.arrow-down:hover img{
+	bottom:-10px;
+}
 
 taglist ul li{
 	/*cursor:pointer;*/

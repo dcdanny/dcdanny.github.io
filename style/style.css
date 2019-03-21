@@ -103,7 +103,7 @@ nav.titleText > a:hover{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height:100%;
+	/*height:100%;*/
 }
 .container{
 	padding:0;

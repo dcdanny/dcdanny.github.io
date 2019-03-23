@@ -6,9 +6,13 @@ layout: master
 	<nav class="titleText">
 		<!--{% include nav.html %}-->
 	</nav>
-	<div class="titleText v-center">Hello, I'm Dan</div><br>
-	<div style="font-size:170%;" class="titleText v-center">2nd Year Computer Science &bull; University of Birmingham</div>
-	<div class="arrow-down"><img src="assets/chevron-down.png" style="height:28px;"></div>
+	<div class="v-center">
+		<div class="profileImg"></div>
+		<!--<img src="/assets/profile.jpg" id="profileImg">-->
+		<div class="titleText">Hello, I'm Dan</div><br>
+		<div style="font-size:170%;" class="titleText">2nd Year Computer Science &bull; University of Birmingham</div>
+	</div>
+	<div class="arrow-down" onclick="window.scrollTo(0,window.innerHeight-100);"><img src="assets/chevron-down.png"></div>
 </header>
 
 		{{ content }}

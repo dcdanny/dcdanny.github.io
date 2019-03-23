@@ -111,7 +111,7 @@ nav.titleText > a:hover{
 	width:100%;
 }
 .container-inner{
-	padding: 15px;
+	padding: 25px 15px;
 	height:100%;
 }
 .contact-item{
@@ -139,9 +139,14 @@ nav.titleText > a:hover{
 	bottom:30px;
 	left:50%;
 	transition: 0.5s;
+	cursor:pointer;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
 }
 .arrow-down img{
-	height:28px;
+	height:35px;
 	transition: 0.5s;
 	position: relative;
 	bottom: 0px;
@@ -165,3 +170,32 @@ taglist ul li{
 taglist ul li span.value{
 	display:none;
 }
+datelist{
+	max-width: 900px;
+	display: block;
+	margin: auto;
+}
+datelist li{
+	margin-bottom: 5px;
+}
+datelist span{
+    float: left;
+	 min-width: 100px;
+	 font-weight:bold;
+	 margin-bottom: 5px;
+ }
+.profileImg{
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	margin-bottom: 15px;
+	/* display: block; */
+	border-radius: 50%;
+	border: 5px solid #FFF;
+	box-shadow: 0 0 10px #333;
+	background-image: url('/assets/profile.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 20%;
+ }

@@ -47,7 +47,7 @@ footer{
 	bottom:0;*/
 	/*background:rgba(255,255,255,0.5);*/
 	width:90%;
-	height:150px;
+	height:100px;
 	border-top: 1px solid #ccc;
 	padding:10px;
 }
@@ -147,7 +147,7 @@ nav.titleText > a:hover{
 	-moz-transform: translateX(-50%);
 }
 .arrow-down img{
-	height:35px;
+	height:45px;
 	transition: 0.5s;
 	position: relative;
 	bottom: 0px;

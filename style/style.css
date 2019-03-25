@@ -11,6 +11,7 @@
 html, body{
 	margin:0;
 	height:100%;
+	scroll-behavior: smooth;
 }
 body{
 	background:#F3F3F3;
@@ -198,4 +199,37 @@ datelist span{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-y: 20%;
- }
+	animation-name:slideDownIn;
+	-webkit-animation-duration: 1.2s;
+	animation-duration: 1.2s;
+}
+.titles{
+	animation-name:slideUpIn;
+	-webkit-animation-duration: 1.2s;
+	animation-duration: 1.2s;
+}
+
+@keyframes slideDownIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+@keyframes slideUpIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+		transform: translateY(100%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}

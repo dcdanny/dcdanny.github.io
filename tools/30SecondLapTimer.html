@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--<link rel="shortcut icon" href="/lion_icon.ico">-->
+<title>Lap Timer</title>
+<!--<link rel="stylesheet" type="text/css" href="/style.css">-->
+<style>
+body{
+	background-color:#EEEEEE;
+	font-family:arial;
+	margin:5px;
+}
+div{
+display:inline-block;
+}
+</style>
+<script>
+count = 0;
+laps = 0;
+lapSecs = 30;
+targetLaps = 175;
+t = false;
+
+function init(){
+	graph1 = document.getElementById("graph1");
+	graph2 = document.getElementById("graph2");
+	totalTime = document.getElementById("totalTime");
+	totalTimeExp = document.getElementById("totalTimeExp");
+	audio = new Audio('AlertSound.mp3');
+}
+function setTimer(){
+	if(!t){
+		t = setInterval(function(){count++;lap()}, 1000)
+	}
+}
+function lap(){
+	//document.getElementById("count").innerHTML = count;
+
+	graph1.style.width = (100 * count / lapSecs)+"%";
+	graph1.innerHTML = count +"/"+ lapSecs;
+	graph2.style.width = (100 * laps / targetLaps)+"%";
+	graph2.innerHTML = laps +"/"+ targetLaps;
+	totalTime.innerHTML = secsToTime(count+(lapSecs*laps));
+	totalTimeExp.innerHTML = secsToTime(lapSecs*targetLaps);
+	if(count >= lapSecs){
+		//document.getElementById("laps").innerHTML = ++laps;
+		laps++;
+		audio.play();
+		count = 0;
+	}
+}
+function secsToTime(secs){
+	var timeRet = "";
+	timeRet += twodigits(Math.floor((secs / 3600)));
+	timeRet += ":"+twodigits(Math.floor((secs / 60) % 60));
+	timeRet += ":"+twodigits(Math.floor(secs % 60));
+
+return timeRet;
+}
+
+function twodigits(n) {
+	return (n < 10 ? '0' : '') + n;
+}
+function pageTitle() {
+	var text = document.getElementById("pageTitleEle").innerHTML;
+	if(text.length>0){document.title = text + " - Lap Timer";}
+	else{document.title = "Lap Timer";}
+}
+</script>
+</head>
+
+<body style="" onload="init();">
+<div id="pageTitleEle" oninput="pageTitle()" onchange="pageTitle()" style="width:100%;text-align: center;" contenteditable>30 Second Lap Timer</div>
+
+<div style="background:#FFFFFF;width:100%;margin: 5px 0;">
+	<div id="graph1" style="background:#999999;"></div>
+</div><br>
+<div style="background:#FFFFFF;width:100%;margin: 5px 0;">
+	<div id="graph2" style="background:#999999;/*background:#FFCC33;*/"></div>
+</div>
+<br>
+<button onclick="setTimer()">Start</button>
+<button onclick="clearInterval(t);t = false;">Pause</button><br>
+
+	<!--Secs: <div id="count">0</div> Laps: <div id="laps">0</div><br>-->
+	<div id="totalTime">00:00:00</div>/<div id="totalTimeExp">00:00:00</div><br>
+
+<div style="font-size:80%;width:100%;">
+	<br>Set Seconds per lap:<input id="lapsSecs" type="number" value="30" style="width:100%;">
+	<button onclick="lapSecs = document.getElementById('lapsSecs').value;">Set</button>
+	<br>Set Laps Completed:<input id="lapsNum" type="number" value="0" style="width:100%;">
+	<button onclick="laps = document.getElementById('lapsNum').value;">Set</button>
+	<br>Set Target Number of Laps:<input id="targetLaps" type="number" value="175" style="width:100%;">
+	<button onclick="targetLaps = document.getElementById('targetLaps').value;">Set</button>
+<br>Volume:
+	<button onclick="audio.volume = 0;">0%</button>
+	<button onclick="audio.volume = 0.01;">1%</button>
+	<button onclick="audio.volume = 0.05;">5%</button>
+	<button onclick="audio.volume = 0.1;">10%</button>
+	<button onclick="audio.volume = 0.25;">25%</button>
+	<button onclick="audio.volume = 0.5;">50%</button>
+	<button onclick="audio.volume = 0.75;">75%</button>
+	<button onclick="audio.volume = 0.9;">90%</button>
+	<button onclick="audio.volume = 1;">100%</button>
+</div>
+</body>
+</html>

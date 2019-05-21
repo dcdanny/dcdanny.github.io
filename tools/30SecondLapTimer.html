@@ -40,8 +40,9 @@ function lap(){
 
 	graph1.style.width = (100 * count / lapSecs)+"%";
 	graph1.innerHTML = count +"/"+ lapSecs;
-	graph2.style.width = (100 * laps / targetLaps)+"%";
-	graph2.innerHTML = laps +"/"+ targetLaps;
+	var totalPercent = (100 * laps / targetLaps);
+	graph2.style.width = totalPercent+"%";
+	graph2.innerHTML = laps +"/"+ targetLaps+"&nbsp;&nbsp;|&nbsp;&nbsp;"+Math.round(totalPercent*10)/10+"%";
 	totalTime.innerHTML = secsToTime(count+(lapSecs*laps));
 	totalTimeExp.innerHTML = secsToTime(lapSecs*targetLaps);
 	if(count >= lapSecs){

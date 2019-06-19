@@ -94,8 +94,16 @@ nav.titleText > a:hover{
 	margin: 10px 15px;/*top and bottom, left and right*/
 	padding:15px;
 }
+.headtext{
+	font-size:170%;
+	text-align:center;
+	display:block;
+}
+.largetext{
+	font-size:120%;
+}
 .subText{
-	color:#666666;
+	color:#727272;
 	font-size:90%;
 }
 .fixedImg{

@@ -133,6 +133,15 @@ nav.titleText > a:hover{
 	display:inline-block;
 	height:100%;
 }
+.container.profile {
+	height:200px;background-color:#FFF;color:#727272;
+}
+.container.profile .container-inner {
+	background-image: url(/assets/trianglepattern.png);
+    background-position: left top;
+    background-size: contain;
+	background-repeat: no-repeat;
+}
 
 .v-center {
     position: relative;

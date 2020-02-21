@@ -2,87 +2,106 @@
 layout: header
 ---
 <script>
-gen = false;
-function genCon(){
-	if(!gen){
-		gen = true;
-		document.getElementById('genc').innerHTML = "Loading...";
-		setTimeout(function (){
-			var a = "l.com";
-			var b = "dcdanny";
-			var c = "g";
-			var d = "clarke";
-			var e = 8 * 8;
-			var f = "mai";
-			var g = String.fromCharCode(e);
-			var x = d + g + c + f + a;
-			document.getElementById('genc').innerHTML = "<a h" + "ref=" + f + "lto" + ":" + b + x + ">" + b + x + "</a>";
-		}, 900);
+	gen = false;
+	function genCon() {
+		if (!gen) {
+			gen = true;
+			document.getElementById('genc').innerHTML = "Loading...";
+			setTimeout(function () {
+				var a = "l.com";
+				var b = "dcdanny";
+				var c = "g";
+				var d = "clarke";
+				var e = 8 * 8;
+				var f = "mai";
+				var g = String.fromCharCode(e);
+				var x = d + g + c + f + a;
+				document.getElementById('genc').innerHTML = "<a h" + "ref=" + f + "lto" + ":" + b + x + ">" + b + x + "</a>";
+			}, 900);
+		}
 	}
-}
 </script>
-	<!--<div style="display:none;background:rgba(255,0,0,0.4);width:50%;height:100%;position:fixed;top:0;">50%</div>
+<!--<div style="display:none;background:rgba(255,0,0,0.4);width:50%;height:100%;position:fixed;top:0;">50%</div>
 	<div style="display:none;background:rgba(0,0,255,0.3);width:33.3%;height:100%;position:fixed;top:0;left:33.3%;">33.3%</div>
 	<div style="display:none;background:rgba(0,255,255,0.3);width:80%;height:100%;position:fixed;top:0;left:10%;">80%</div>-->
-	<div class="container profile"><div class="container-inner">
+<div class="container profile">
+	<div class="container-inner">
 		<table style="width:100%;">
-		<tr><td style="width:50%;min-width:80px;text-align: center;">
-			<span class="headtext">Daniel Clarke</span>
-		</td><td style="min-width:275px;width:50%;">
-			<div class="contact-item">
-					<img src="/assets/location.png" alt="Location" style="width:40px;">
-					<span>Birmingham, UK</span>
-			</div>
-			<br>
+			<tr>
+				<td style="width:50%;min-width:80px;text-align: center;">
+					<span class="headtext">Daniel Clarke</span>
+				</td>
+				<td style="min-width:275px;width:50%;">
+					<div class="contact-item">
+						<img src="/assets/location.png" alt="Location" style="width:40px;">
+						<span>Birmingham, UK</span>
+					</div>
+					<br>
 
-			<div class="contact-item">
-					<img src="/assets/mail.png"  alt="Email" style="width:40px;">
-					<span id="genc" onclick="genCon();" style="cursor:pointer;">Click to Reveal...</span>
-			</div>
-			<br>
+					<div class="contact-item">
+						<img src="/assets/mail.png" alt="Email" style="width:40px;">
+						<span id="genc" onclick="genCon();" style="cursor:pointer;">Click to Reveal...</span>
+					</div>
+					<br>
 
-			<div class="contact-item">
-				<a href="https://linkedin.com/in/dan-j-clarke/">
-					<img src="/assets/linkedin.png" alt="LinkedIn Icon" style="width:40px;">
-					<span>linkedin.com/in/dan-j-clarke/</span>
-				</a>
-			</div>
-			<br>
-			<div class="contact-item">
-				<a href="https://github.com/dcdanny">
-					<img src="/assets/gitHub.png" alt="GitHub Icon" style="width:40px;">
-					<span>github.com/dcdanny</span>
-				</a>
-			</div>
-			<br>
-		</td></tr></table>
-	</div></div>
-<div class="container fixedImg" style="height:0%;background-image:url('/assets/codeWallpaper.png');background-color: #333;padding:0;">
+					<div class="contact-item">
+						<a href="https://linkedin.com/in/dan-j-clarke/">
+							<img src="/assets/linkedin.png" alt="LinkedIn Icon" style="width:40px;">
+							<span>linkedin.com/in/dan-j-clarke/</span>
+						</a>
+					</div>
+					<br>
+					<div class="contact-item">
+						<a href="https://github.com/dcdanny">
+							<img src="/assets/gitHub.png" alt="GitHub Icon" style="width:40px;">
+							<span>github.com/dcdanny</span>
+						</a>
+					</div>
+					<br>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="container fixedImg"
+	style="height:0%;background-image:url('/assets/codeWallpaper.png');background-color: #333;padding:0;">
 	<!--Semi Transparent Overlay-->
 	<div class="container-inner" style="height:100%;background-color:rgba(0,0,0,0.4);color:#FFFFFF;text-align:center;">
 		<span class="headtext">Technical Skills</span>
 		<taglist>
 			<ul>
-				<li>HTML</li><li>CSS</li><li>PHP</li><li>Javascript</li><li>Node.js</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>PHP</li>
+				<li>Javascript</li>
+				<li>Node.js</li>
 				<br>
 				<li>Java</li>
 
 				<li>Git</li>
-				<li>Python</li><li>NLTK</li>
-				<li>Matlab</li><li>SQL</li>
+				<li>Python</li>
+				<li>NLTK</li>
+				<li>Matlab</li>
+				<li>SQL</li>
 				<li>C/C++</li>
 				<br>
-				<li>Linux</li><li>Windows</li>
+				<li>Linux</li>
+				<li>Windows</li>
 			</ul>
 		</taglist>
 		<span class="headtext">Projects</span>
 		<dateList style="text-align: left;">
 			<ul>
 				<li><span>2019 </span>As part of my degree course, working as a team to produce a 2D game in Java</li>
-				<li><span>2018/2019 </span>Volunteering with Valefest to develop their website &amp; QR code ticketing system for the 2019 student festival: <u><a href="http://valefest.co.uk/" target="_blank">valefest.co.uk</a></u></li>
-				<li><span>2018/2019 </span>Currently working on a desktop music player application using ElectronJS and Node.js</li>
-				<li><span>2018/2019 </span>Attended Hack the Midlands Hackathon in both 2017 & 2018 In 2018 my team and I made a web based chess game</li>
-				<li><span>2013 - </span>Use my Raspberry Pi for programming and for creating my own website with several different divisions.</li>
+				<li><span>2018/2019 </span>Volunteering with Valefest to develop their website &amp; QR code ticketing
+					system for the 2019 student festival: <u><a href="http://valefest.co.uk/"
+							target="_blank">valefest.co.uk</a></u></li>
+				<li><span>2018/2019 </span>Currently working on a desktop music player application using ElectronJS and
+					Node.js</li>
+				<li><span>2018/2019 </span>Attended Hack the Midlands Hackathon in both 2017 & 2018 In 2018 my team and
+					I made a web based chess game</li>
+				<li><span>2013 - </span>Use my Raspberry Pi for programming and for creating my own website with several
+					different divisions.</li>
 
 			</ul><br>
 		</dateList>
@@ -93,24 +112,26 @@ function genCon(){
 		</div>
 	</div>
 </div>
-<div class="container" style="height:200px;background-color:#d6ff67;"><div class="container-inner">
-	<span class="headtext">Education</span><br>
-	<div style="width:30%;min-width:130px;float:left;text-align:center;">
-		<div style="margin: 5px;">
-			<span class="largetext">University of Birmingham</span><br>
-			<span class="subText">Edgbaston, Birmingham, B15 2TT</span><br>
+<div class="container" style="height:200px;background-color:#d6ff67;">
+	<div class="container-inner">
+		<span class="headtext">Education</span><br>
+		<div style="width:30%;min-width:130px;float:left;text-align:center;">
+			<div style="margin: 5px;">
+				<span class="largetext">University of Birmingham</span><br>
+				<span class="subText">Edgbaston, Birmingham, B15 2TT</span><br>
+			</div>
 		</div>
-	</div>
-	<div style="width:70%;float:left;margin-bottom:5px;">
-		<div style="margin: 5px;">
-			<span style="">BSc Computer Science</span>&nbsp;
-			<span class="subText">Sept 2017 - Present</span><br>
-			<span class="">Expected 2:1, Graduation 2021</span><br>
+		<div style="width:70%;float:left;margin-bottom:5px;">
+			<div style="margin: 5px;">
+				<span style="">BSc Computer Science</span>&nbsp;
+				<span class="subText">Sept 2017 - Present</span><br>
+				<span class="">Expected 2:1, Graduation 2021</span><br>
+			</div>
 		</div>
-	</div>
-	<br>
+		<br>
 
-</div></div>
+	</div>
+</div>
 <!--
 <div class="content">
 	<hr>

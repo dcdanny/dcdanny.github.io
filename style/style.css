@@ -280,6 +280,37 @@ datelist span {
 	animation-duration: 1.2s;
 }
 
+.bicycle {
+	display: inline-block;
+	height: 210px;
+	overflow: hidden;
+	position: relative;
+	width: 330px;
+}
+
+.bicycle .wheel {
+	bottom:0;
+	position: absolute;
+	width: 130px;
+}
+
+.bicycle #frontwheel{
+	left:188px;
+}
+
+.bicycle .frame {
+	bottom: 45px;
+	left:60px;
+	position: absolute;
+	width: 200px;
+}
+.transition{
+    background-color: #FFF;
+    background-size: contain;
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    height: 200px;
+}
 @keyframes slideDownIn {
 	0% {
 		opacity: 0;

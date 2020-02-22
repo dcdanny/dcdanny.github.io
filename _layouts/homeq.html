@@ -20,6 +20,19 @@ layout: header
 			}, 900);
 		}
 	}
+	document.body.onload = function () {
+		var frontwheel = document.getElementById("frontwheel");
+		var rearwheel = document.getElementById("rearwheel");
+		window.onscroll = function () {
+			if (frontwheel && rearwheel) {
+				var theta = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+				theta = theta / 150 % Math.PI
+				frontwheel.style.transform = 'rotate(' + theta + 'rad)';
+				rearwheel.style.transform = 'rotate(' + theta + 'rad)';
+			}
+		};
+	};
+
 </script>
 <!--<div style="display:none;background:rgba(255,0,0,0.4);width:50%;height:100%;position:fixed;top:0;">50%</div>
 	<div style="display:none;background:rgba(0,0,255,0.3);width:33.3%;height:100%;position:fixed;top:0;left:33.3%;">33.3%</div>

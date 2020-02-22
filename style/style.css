@@ -160,11 +160,32 @@ nav.titleText>a:hover {
 	color: #727272;
 }
 
-.container.profile .container-inner {
+.container.profile {
 	background-image: url(/assets/trianglepattern.png);
 	background-position: left top;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+.container .headtext img {
+	height: 1em;
+	margin: 0 7px;
+	vertical-align: middle;
+}
+
+.container.profile .profile-column-left {
+	min-width: 80px;
+	text-align: center;
+	text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF;
+	width: 50%;
+}
+
+.container.profile .profile-column-right {
+	background: #FFFFFFCC;
+	border-radius: 15px;
+	box-shadow: 0 0 5px #FFFFFF;
+	min-width: 275px;
+	width: 50%;
 }
 
 .v-center {

@@ -39,7 +39,7 @@ The ValeFest committee 2019:
 <br>
 ![valefest_stage.jpg](/assets/css/valefest_stage.jpg)
 
-ValeFest ticketing is a horribly convoluted Guild mandated process. I've helped present to the guild a way of much simplifying it so, if ValeFest was actually going ahead this year, it would have been a much simpler process. This experience dealing with the guild is an advantage on any society's committee!
+ValeFest ticketing is a horribly convoluted Guild mandated process that I've helped present a way to simplify. If ValeFest was actually going ahead this year, it would have been a much simpler process compared to last year. This experience dealing with the guild is an advantage on any society's committee!
 
 Apparently I'm also an amazing multitasker:
 <br>

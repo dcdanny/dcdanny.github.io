@@ -68,6 +68,8 @@ main img.emoji {
 main .text-container {
 	max-width: 900px;
 	margin-top: 3em;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 header {

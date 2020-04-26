@@ -41,7 +41,7 @@ The ValeFest committee 2019:
 
 ValeFest ticketing is a horribly convoluted Guild mandated process that I've helped present a way to simplify. If ValeFest was actually going ahead this year, it would have been a much simpler process compared to last year. This experience dealing with the guild is an advantage on any society's committee!
 
-Apparently I'm also an amazing multitasker:
+Apparently, I'm also an amazing multitasker:
 <br>
 ![valefest_dan-clarke.jpg](/assets/css/valefest_dan-clarke.jpg)
 <br>
@@ -49,15 +49,15 @@ that might be useful...
 
 ## My Plans for CSS
 - I'll bring my experience from ValeFest as a key part of the marketing team
-	- I have real world experience with marketing both from my committee position in ValeFest and my year in industry so I know roughly what works and what doesn't.
+	- I have real-world experience with marketing both from my committee position in ValeFest and my year in industry so I know roughly what works and what doesn't.
 	- This adds to my technical experience in web development
 - I'd like to explore whether CSS can purchase a camera so we can take photos at more CSS events, not just the end of year ball
-	- Apart from technical issues, it worked really well to share all these photos to the facebook group
-	- This'll be invaluble to help with marketing the society to increase membership further
+	- Apart from technical issues, it worked really well to share all these photos to the Facebook group
+	- This will be invaluable to help with marketing the society to increase membership further
 - Verification on Facebook, Instagram and Twitter
 
 ## This website:
-- Is a github domain since I've not actually bought a domain name for myself yet
+- Is a GitHub domain since I've not actually bought a domain name for myself yet
 - Was written in Jekyll, the markdown/ruby based blogging language
 	- Same as both the <a href="https://valefest.co.uk/" target="_blank" rel="noreferrer noopener">ValeFest Website</a> and the <a href="https://cssbham.com/" target="_blank" rel="noreferrer noopener">CSS website</a>
 - Helped me get my year in industry placement ([Here](/) if you're interested)

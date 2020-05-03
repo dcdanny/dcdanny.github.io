@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-	background: #F3F3F3;
+	background: #DDDDDD;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 110%;
 }
@@ -47,13 +47,16 @@ a {
 }
 
 footer {
-	/*position:fixed;
-	bottom:0;*/
-	/*background:rgba(255,255,255,0.5);*/
-	border-top: 1px solid #ccc;
-	height: 100px;
-	padding: 10px;
-	width: 90%;
+	background: #000000;
+	color:#FFFFFF;
+	/* border-top: 1px solid #ccc; */
+	height: auto;
+	/* padding: 10px; */
+	width: 100%;
+}
+
+footer > div {
+	padding: 25px 10px;
 }
 
 nav.titleText {
@@ -69,6 +72,7 @@ nav.titleText {
 .titleText {
 	color: #FFFFFF;
 	font-size: 380%;
+	font-weight: normal;
 	margin: auto;
 	text-align: center;
 	text-shadow: 0 0 10px #333;
@@ -120,6 +124,7 @@ nav.titleText>a:hover {
 .subText {
 	color: #727272;
 	font-size: 90%;
+	text-align: left;
 }
 
 .fixedImg {
@@ -148,12 +153,14 @@ nav.titleText>a:hover {
 	display: inline-block;
 	height: 50px;
 	vertical-align: middle;
+	white-space: nowrap;
 }
 
 .contact-item span {
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
+	white-space: normal;
 }
 
 .container.profile {
@@ -265,6 +272,11 @@ tilelist {
 	display: block;
 	margin: auto;
 	max-width: 900px;
+	text-align: center;
+}
+
+tilelist.big li {
+	min-height: 0;
 }
 
 tilelist ul {
@@ -274,11 +286,15 @@ tilelist ul {
 tilelist li {
 	background-color: #FFFFFF;
 	border-radius: 5px;
+	/* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+	box-shadow: 0 9px 16px 0px rgba(0, 0, 0, 0.4);
 	color: #000000;
 	display: inline-block;
 	min-height: 330px;
 	margin-bottom: 5px;
+	margin-right: 4px;
 	overflow: hidden;
+	text-align: center;
 	width: 98%;
 }
 
@@ -286,11 +302,17 @@ tilelist li {
 	tilelist li {
 		width: 48%;
 	}
+	tilelist.big li {
+		width: 98%;
+	}
 }
 
 @media screen and (min-width: 700px) {
 	tilelist li {
 		width: 32%;
+	}
+	tilelist.big li {
+		width: 48%;
 	}
 }
 
@@ -305,12 +327,12 @@ tilelist .imageContainer {
 	width: 100%;
 }
 
-tilelist img {
+tilelist .imageContainer img {
 	transition: transform 0.4s;
 	max-width: 100%;
 }
 
-tilelist img:hover {
+tilelist .imageContainer img:hover {
 	transform: scale(1.2);
 }
 
@@ -333,18 +355,50 @@ tilelist img:hover {
 	width: 200px;
 }
 
+.interestsContainer {
+	height: 260px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.interestsContainer>div {
+	display: inline;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.interestsContainer>div>div {
+	text-align: center;
+	width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+	.interestsContainer>div>div {
+		width: 50%;
+	}
+	div.interestsContainer .bicycle, div.interestsContainer .ski {
+		opacity: 85%;
+	}
+}
+
 .titles {
 	animation-name: slideUpIn;
 	-webkit-animation-duration: 1.2s;
 	animation-duration: 1.2s;
 }
 
-.bicycle {
+.bicycle, .ski {
 	display: inline-block;
-	height: 210px;
-	overflow: hidden;
+	height: 250px;
+	/* overflow: hidden; */
 	position: relative;
+	text-align: left;
 	width: 330px;
+}
+
+.interestsContainer .bicycle, .interestsContainer .ski{
+	opacity: 45%;
 }
 
 .bicycle .wheel {
@@ -362,6 +416,35 @@ tilelist img:hover {
 	left: 60px;
 	position: absolute;
 	width: 200px;
+}
+.ski .ski-run{
+    height: 100%;
+}
+
+.ski .skier{
+	position: absolute;
+    top: 0;
+    left: 0;
+	height: 80px;
+	transform: rotate(-15deg);
+}
+.container.more {
+	position: relative;
+	z-index: 1;
+}
+
+.container.more::before {
+	background: inherit;
+	top: 0;
+	content: '';
+	display: block;
+	height: 97%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transform: skewY(2.5deg);
+	transform-origin: 100%;
+	z-index: -1;
 }
 
 .transition {
@@ -397,4 +480,9 @@ tilelist img:hover {
 		-webkit-transform: none;
 		transform: none;
 	}
+}
+
+.education-section .subText{
+	color:#000000;
+	font-style: italic;
 }

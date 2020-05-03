@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Daniel Clarke</title>
@@ -10,27 +11,37 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146711066-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'UA-146711066-1');
 	</script>
 </head>
+
 <body lang="en">
 
-		{{ content }}
+	{{ content }}
 
-<footer class="site-footer h-card" style="max-width:100%;">
-	<div class="footerText contact-item">
-		<span>Hosted by&nbsp;</span>
-		<a href="https://github.com/dcdanny"><img src="/assets/gitHub.png" alt="github"></a>
-	</div>
-	<div class="wrapper">
-		<!--<div class="subText">
+	<footer class="site-footer h-card" style="max-width:100%;">
+		<div>
+			<br>
+			<div class="profileImg" style="width:100px;height:100px;"></div>
+			<div class="" style="text-align:center;">&copy; Dan Clarke 2020</div>
+			<br>
+			{% comment %}
+			<div class="footerText contact-item">
+				<span>Hosted by&nbsp;</span>
+				<a href="https://github.com/dcdanny"><img src="/assets/gitHub.png" alt="github"></a>
+			</div>
+			{% endcomment %}
+			<div class="wrapper">
+				<!--<div class="subText">
 	Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 		</div>-->
-	</div>
-</footer>
+			</div>
+		</div>
+	</footer>
 
 </body>
+
 </html>

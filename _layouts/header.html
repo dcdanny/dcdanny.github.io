@@ -10,11 +10,13 @@ layout: master
 		<div class="profileImg"></div>
 		<!--<img src="/assets/profile.jpg" id="profileImg">-->
 		<div class="titles">
-			<div class="titleText">Hello, I'm Dan</div><br>
-			<div style="font-size:170%;" class="titleText">3rd Year Computer Science &bull; University of Birmingham</div>
+			<h1 class="titleText">Hello, I'm Dan</h1><br>
+			<h2 style="font-size:170%;" class="titleText">3rd Year Computer Science &bull; University of Birmingham</h2>
 		</div>
 	</div>
-	<div class="arrow-down" onclick="window.scrollTo(0,window.innerHeight-100);"><img src="assets/chevron-down.png" alt="Down Arrow"></div>
+	<a href="#profile" class="arrow-down" onclick="event.preventDefault();window.scrollTo(0,window.innerHeight-100);">
+		<img src="assets/chevron-down.png" alt="Scroll Down to Content" title="Scroll Down to Content">
+	</a>
 </header>
 
 		{{ content }}

@@ -35,7 +35,7 @@ layout: header
 <!--<div style="display:none;background:rgba(255,0,0,0.4);width:50%;height:100%;position:fixed;top:0;">50%</div>
 	<div style="display:none;background:rgba(0,0,255,0.3);width:33.3%;height:100%;position:fixed;top:0;left:33.3%;">33.3%</div>
 	<div style="display:none;background:rgba(0,255,255,0.3);width:80%;height:100%;position:fixed;top:0;left:10%;">80%</div>-->
-<section class="container profile" id="profile" aria-label="Profile">
+<section class="container profile" id="profile" aria-label="Profile" tabindex="-1">
 	<div class="container-inner">
 		<table style="width:100%;">
 			<tr>
@@ -197,10 +197,10 @@ layout: header
 		</div>
 		<div style="width:70%;float:left;margin-bottom:5px;">
 			<div style="margin: 5px;">
-				<span style="">BSc Computer Science</span>&nbsp;
+				<span style="">BSc Computer Science with a Year in Industry</span>&nbsp;<br>
 				<span class="subText">Sept 2017 - Present</span><br>
-				<span>First Year</span> <span class="subText">2:1</span><br>
-				<span>Second Year</span> <span class="subText">2:1</span><br>
+				{% comment %}<span>First Year</span> <span class="subText">2:1</span><br>
+				<span>Second Year</span> <span class="subText">2:1</span><br>{% endcomment %}
 				<span class="">Graduation 2021, Expected 2:1</span><br>
 			</div>
 		</div>
@@ -208,7 +208,7 @@ layout: header
 
 </div>
 <div class="transition" style="background-image: url('/assets/limeTransition.png');"></div>
-<div class="container" style="background-color:#FFFFFF;color:#000000;">
+<div class="container" style="color:#000000;">
 	<div class="container-inner">
 		<span class="headtext"><img src="/assets/heartIcon.png" alt="Heart Icon">Other Interests</span>
 		<!-- When I'm not working on my latest project: -->
@@ -232,11 +232,6 @@ layout: header
 
 		<div class="interestsContainer">
 			<div>
-				<div style="float:left;" class="v-center">
-					<div class="headtext">Cycling</div>
-				</div>
-			</div>
-			<div>
 				<div style="float:right;" class="v-center">
 					<div class="bicycle">
 						<img src="/assets/bicycleWheel.png" alt="Bike Wheel" id="frontwheel" class="wheel">
@@ -245,11 +240,12 @@ layout: header
 					</div>
 				</div>
 			</div>
+			<div>
+				<div style="float:left;" class="v-center">
+					<div class="headtext">Cycling</div>
+				</div>
+			</div>
 		</div>
-
-
-		
-		<br><br>
 
 
 	</div>
@@ -257,14 +253,14 @@ layout: header
 <div class="container more" style="background-color:#000000;color:#FFFFFF;">
 	<div class="container-inner" style="max-width:900px;">
 		<span class="headtext">
-			<img src="/assets/fileIconW.png" alt="Heart Icon">Theres more...
+			<img src="/assets/fileIconW.png" alt="Document Icon">Theres more...
 		</span>
 		<br>
-		<a href="#profile" style="text-decoration: underline;">Contact me</a> for a copy of my CV!
+		<a href="#profile" onclick="document.getElementById('profile').focus()" style="text-decoration: underline;">Contact me</a> for a copy of my CV!
 		<br><br>
 	</div>
 </div>
-
+{% comment %}
 <!--
 <tilelist class="big">
 	<ul>
@@ -291,3 +287,4 @@ layout: header
 	</ul>
 </tilelist>
 -->
+{% endcomment %}

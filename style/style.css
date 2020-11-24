@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-	background: #DDDDDD;
+	background: #FFFFFF;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 110%;
 }
@@ -56,7 +56,7 @@ footer {
 }
 
 footer > div {
-	padding: 25px 10px;
+	padding: 25px 15px;
 }
 
 nav.titleText {
@@ -144,7 +144,7 @@ nav.titleText>a:hover {
 
 .container-inner {
 	height: 100%;
-	padding: 25px 15px;
+	padding: 35px 15px;
 	/* max-width: 900px; */
 	margin: auto;
 }
@@ -357,8 +357,18 @@ tilelist .imageContainer img:hover {
 
 .interestsContainer {
 	height: 260px;
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 	position: relative;
+}
+@media screen and (min-width: 1350px) {
+	.interestsContainer{
+		display: inline-block;
+		width: 49%;
+		border-right: 2px solid #999;
+	}
+	.interestsContainer:last-child{
+		border-right: initial;
+	}
 }
 
 .interestsContainer>div {
@@ -429,6 +439,7 @@ tilelist .imageContainer img:hover {
 	transform: rotate(-15deg);
 }
 .container.more {
+	margin-top: 4em;
 	position: relative;
 	z-index: 1;
 }
@@ -445,6 +456,11 @@ tilelist .imageContainer img:hover {
 	transform: skewY(2.5deg);
 	transform-origin: 100%;
 	z-index: -1;
+}
+@media screen and (min-width: 1950px) {
+	.container.more::before {
+		transform: skewY(1.5deg);
+	}
 }
 
 .transition {

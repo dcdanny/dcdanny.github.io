@@ -73,7 +73,7 @@ nav.titleText {
 	color: #FFFFFF;
 	font-size: 380%;
 	font-weight: normal;
-	margin: auto;
+	margin: auto 8px;
 	text-align: center;
 	text-shadow: 0 0 10px #333;
 }
